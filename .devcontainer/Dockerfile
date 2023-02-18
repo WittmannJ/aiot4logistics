@@ -20,8 +20,12 @@ RUN mkdir -p /home/$USERNAME/.vscode-server/extensions \
         /home/$USERNAME/.vscode-server \
         /home/$USERNAME/.vscode-server-insiders
 
+RUN apt-get update
+RUN apt-get -y install libgit2-dev
+
 # install auto-sklearn
 RUN apt-get -y install build-essential swig python3-dev
+
 
 # COPY requirements.txt requirements.txt
 # RUN pip3 install -r requirements.txt
