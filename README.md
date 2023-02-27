@@ -5,16 +5,16 @@ this project requires this packages
 RUN python -m pip install auto-sklearn
 
 # install the other dependencies i need for my code
-RUN python -m pip install pygit2
+#RUN python -m pip install pygit2
 RUN python -m pip install pandas
-RUN python -m pip install numpy scipy matplotlib ipython jupyter pandas sympy nose
+RUN python -m pip install scipy matplotlib ipython jupyter pandas sympy nose
 RUN python -m pip install scikit-learn
 RUN python -m pip install influxdb
 RUN python -m pip install seaborn
 RUN python -m pip install autopep8
 RUN python -m pip install paho-mqtt
 RUN python -m pip install mlflow
-RUN python -m pip install dvc !!error does not install 
+#RUN python -m pip install dvc !!error does not install 
 
 -> src/diff.h:33:10: fatal error: git2.h: No such file or directory
      33 | #include <git2.h>

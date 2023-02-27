@@ -1,4 +1,4 @@
-FROM tensorflow/tensorflow:latest-gpu-jupyter
+FROM tensorflow/tensorflow:2.11.0-gpu-jupyter
 
 # # System requirements
 # RUN apt-get update && apt-get install -y \
@@ -21,15 +21,20 @@ RUN mkdir -p /home/$USERNAME/.vscode-server/extensions \
         /home/$USERNAME/.vscode-server-insiders
 
 RUN apt-get update
+RUN apt-get -y install htop
 RUN apt-get -y install libgit2-dev
+
 
 # install auto-sklearn
 RUN apt-get -y install build-essential swig python3-dev
+RUN apt-get -y install libcairo2-dev pkg-config python3-dev
+
+RUN python -m pip install --upgrade pip
 
 
-# COPY requirements.txt requirements.txt
-# RUN pip3 install -r requirements.txt
-# RUN python -m pip install auto-sklearn
+COPY requirements.txt requirements.txt
+RUN python -m pip install -r requirements.txt
+RUN python -m pip install auto-sklearn
 
 # # install the other dependencies i need for my code
 # RUN python -m pip install pandas
