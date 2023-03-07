@@ -32,8 +32,8 @@ RUN apt-get -y install libcairo2-dev pkg-config python3-dev
 RUN python -m pip install --upgrade pip
 
 
-COPY requirements.txt requirements.txt
-RUN python -m pip install -r requirements.txt
+COPY myrequirements.txt myrequirements.txt
+RUN python -m pip install -r myrequirements.txt
 RUN python -m pip install auto-sklearn
 
 # # install the other dependencies i need for my code
