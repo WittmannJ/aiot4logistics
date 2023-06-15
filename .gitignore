@@ -2,3 +2,11 @@ data/data_structured/
 data/**/*.json
 data/**/*.zip
 mlruns
+notebooks/mlrunsold/
+params/n_estimators
+notebooks/projects/weightless/experiment1_newInsert/woodenInsertData/
+
+*.zip
+policy_p1
+.gitignore
+policy_p2
