@@ -10,3 +10,5 @@ notebooks/projects/weightless/experiment1_newInsert/woodenInsertData/
 policy_p1
 .gitignore
 policy_p2
+notebooks/projects/4_WheightsVsNoWeights/data/WeightsVsNoWeightsData/**/*.json
+notebooks/projects/weight1_5kg/**/*.json
