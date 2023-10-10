@@ -12,3 +12,4 @@ policy_p1
 policy_p2
 notebooks/projects/4_WheightsVsNoWeights/data/WeightsVsNoWeightsData/**/*.json
 notebooks/projects/weight1_5kg/**/*.json
+notebooks/projects/4_WheightsVsNoWeights/experimentOne/data/
